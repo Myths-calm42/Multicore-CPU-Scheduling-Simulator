@@ -1,0 +1,7 @@
+# PID Arrival Burst Priority PreferredCore PinnedCore
+# Soft preference keeps arrivals near core 0, while the balancer may migrate queued work.
+1 0 1 0 0 -1
+2 1 4 1 0 -1
+3 2 7 2 0 -1
+4 0 3 0 0 -1
+5 1 6 1 0 -1
