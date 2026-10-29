@@ -4,14 +4,13 @@
 #include <vector>
 
 struct GanttEntry {
-    int pid;
+    int pid;       // -1 denotes idle; -2 denotes modeled migration overhead
     int start;
     int end;
 };
 
 struct Core {
     int coreId = 0;
-    int currentTime = 0;
     std::vector<GanttEntry> gantt;
 };
 
